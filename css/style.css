@@ -1,0 +1,12 @@
+nav {
+    background-color: #eee;
+    padding: 0 8rem;
+    place-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav :hover {
+    background-color: #ddd;
+    color: black;
+}
