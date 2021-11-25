@@ -1,20 +1,22 @@
-.nav-links {
-  place-items: center;
-  display: flex;
-  justify-content: space-evenly;
-  width:100%;
+a {color:blue;}
+
+
+.nav-links a { padding:3px;}
+
+.nav-links :hover {
+  background-color: #00ff97;
+  color: black;
 }
 
 #main-nav{
     position:fixed;
     top:0;
     left:0;
-    background:white;
-}
-
-.nav-links :hover {
-  background-color: #00ff97;
-  color: black;
+    background:rgba(255,255,255,0.87);
+    place-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
 }
 
 body {
@@ -52,7 +54,6 @@ nav,h1,h2,h3,h4,h5{
 }
 
 footer {
-  background-color: #f1f1f1;
   padding: 10px;
   text-align: center;
 }
