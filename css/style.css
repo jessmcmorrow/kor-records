@@ -1,15 +1,18 @@
-nav {
+.nav-links {
   place-items: center;
   display: flex;
   justify-content: space-evenly;
-  position:fixed;
   width:100%;
-  top:0;
-  left:0;
-  background:white;
 }
 
-nav :hover {
+#main-nav{
+    position:fixed;
+    top:0;
+    left:0;
+    background:white;
+}
+
+.nav-links :hover {
   background-color: #00ff97;
   color: black;
 }
