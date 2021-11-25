@@ -1,8 +1,12 @@
 nav {
-  padding: 0 8rem;
   place-items: center;
   display: flex;
   justify-content: space-evenly;
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  background:white;
 }
 
 nav :hover {
