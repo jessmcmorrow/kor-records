@@ -1,50 +1,51 @@
 nav {
-    padding: 0 8rem;
-    place-items: center;
-    display: flex;
-    justify-content: space-evenly;
+  padding: 0 8rem;
+  place-items: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-    nav :hover {
-        background-color: #4682B4;
-        color: black;
-    }
+nav :hover {
+  background-color: #00ff97;
+  color: black;
+}
 
 body {
-    font-family: 'MyWebFont', Helvetica, sans-serif;
-    font-size: 18px;
-    background-color: #4682B4;
+  font-family: "CircularStd", Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #00ff97;
 }
 
-/* this isn't working waahh */
 @font-face {
-    font-family: 'MyWebFont';
-    src: url('fonts/CircularStd-Bold.otf'); /* IE9 Compat Modes */
-    src: url('fonts/CircularStd-Bold.otf') format('embedded-opentype'), /* IE6-IE8 */
-    url('fonts/CircularStd-Bold.otf') format('woff2'), /* Super Modern Browsers */
-    url('fonts/CircularStd-Bold.otf') format('woff'), /* Pretty Modern Browsers */
-    url('fonts/CircularStd-Bold.otf') format('truetype'), /* Safari, Android, iOS */
-    url('fonts/CircularStd-Bold.otf') format('svg'); /* Legacy iOS */
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd-Bold.otf"); /* IE9 Compat Modes */
+  src: url("/fonts/CircularStd-Bold.otf") format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/CircularStd-Bold.otf") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/CircularStd-Bold.otf")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("/fonts/CircularStd-Bold.otf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("/fonts/CircularStd-Bold.otf") format("svg"); /* Legacy iOS */
 }
 
 .row {
-    display: -webkit-flex;
-    display: flex;
+  display: -webkit-flex;
+  display: flex;
 }
 
 .column {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 10px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
 }
 
 .footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
 }
 #container img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
