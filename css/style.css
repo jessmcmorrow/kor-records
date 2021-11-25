@@ -11,13 +11,17 @@ nav :hover {
 }
 
 body {
-  font-family: "CircularStd", Helvetica, sans-serif;
+  font-family:sans-serif;
   font-size: 18px;
   background-color: #00ff97;
 }
 
+nav,h1,h2,h3,h4,h5{
+  font-family: "CircularStdBold", Helvetica, sans-serif;
+}
+
 @font-face {
-  font-family: "CircularStd";
+  font-family: "CircularStdBold";
   src: url("/fonts/CircularStd-Bold.otf"); /* IE9 Compat Modes */
   src: url("/fonts/CircularStd-Bold.otf") format("embedded-opentype"),
     /* IE6-IE8 */ url("/fonts/CircularStd-Bold.otf") format("woff2"),
