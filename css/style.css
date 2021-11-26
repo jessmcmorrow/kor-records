@@ -19,6 +19,8 @@ a {color:blue;}
     width:100%;
 }
 
+#main-nav a{color: black}
+
 body {
   font-family:sans-serif;
   font-size: 18px;
