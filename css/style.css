@@ -1,4 +1,70 @@
-a {color:blue;}
+@font-face {
+  font-family: "CircularStdBold";
+  src: url("/fonts/CircularStd-Bold.otf"); /* IE9 Compat Modes */
+  src: url("/fonts/CircularStd-Bold.otf") format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/CircularStd-Bold.otf") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/CircularStd-Bold.otf")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("/fonts/CircularStd-Bold.otf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("/fonts/CircularStd-Bold.otf") format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Studio Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Studio Sans Regular'), url('/fonts/StudioSans.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Studio Sans ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Studio Sans ExtraLight'), url('/fonts/StudioSans Extra Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Studio Sans Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Studio Sans Light'), url('/fonts/StudioSans Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Studio Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Studio Sans Medium'), url('/fonts/StudioSans Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Studio Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Studio Sans Bold'), url('/fonts/StudioSans Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Studio Sans ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Studio Sans ExtraBold'), url('/fonts/StudioSans Extra Bold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Glaser Stencil D Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Studio Sans ExtraBold'), url('/fonts/Glaser Stencil D Regular.ttf') format('ttf');
+        }
+
+    a {color:blue;}
 
 
 .nav-links a { padding:3px;}
@@ -22,25 +88,19 @@ a {color:blue;}
 #main-nav a{color: black}
 
 body {
-  font-family:sans-serif;
+  font-family:"Studio Sans Regular";
   font-size: 18px;
-  background-color: #00ff97;
+  background-color: white;
 }
 
-nav,h1,h2,h3,h4,h5{
-  font-family: "CircularStdBold", Helvetica, sans-serif;
-}
+header{margin-top:50px;}
 
-@font-face {
-  font-family: "CircularStdBold";
-  src: url("/fonts/CircularStd-Bold.otf"); /* IE9 Compat Modes */
-  src: url("/fonts/CircularStd-Bold.otf") format("embedded-opentype"),
-    /* IE6-IE8 */ url("/fonts/CircularStd-Bold.otf") format("woff2"),
-    /* Super Modern Browsers */ url("/fonts/CircularStd-Bold.otf")
-      format("woff"),
-    /* Pretty Modern Browsers */ url("/fonts/CircularStd-Bold.otf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("/fonts/CircularStd-Bold.otf") format("svg"); /* Legacy iOS */
+h1{
+    font-family: "Glaser Stencil D Regular", Helvetica, sans-serif;
+  }
+
+nav,h2,h3,h4,h5{
+  font-family: "Studio Sans Bold", Helvetica, sans-serif;
 }
 
 .row {
