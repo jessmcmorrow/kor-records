@@ -107,6 +107,8 @@ header {
     margin-top: 50px;
 }
 
+section {text-align: center;}
+
 h1,h3 {
     font-family: "Glaser Stencil D Regular", Helvetica, sans-serif;
 }
