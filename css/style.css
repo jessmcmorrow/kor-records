@@ -61,11 +61,23 @@
         font-family: 'Glaser Stencil D Regular';
         font-style: normal;
         font-weight: normal;
-        src: local('Studio Sans ExtraBold'), url('/fonts/Glaser Stencil D Regular.ttf') format('ttf');
+        src: local('Studio Sans ExtraBold'), url('/fonts/Glaser Stencil D Regular.woff') format('woff');
         }
 
     a {color:blue;}
 
+
+    .logo{
+        max-width:10vw; 
+        position:fixed; 
+        opacity:0.8;
+        top:0;
+        left:10;
+        transition: 0.05s ease-in-out;
+
+    }
+
+    .title-text{max-width:110px;}
 
 .nav-links a { padding:3px;}
 
@@ -75,7 +87,7 @@
 }
 
 #main-nav{
-    position:fixed;
+    position:absolute;
     top:0;
     left:0;
     background:rgba(255,255,255,0.87);
@@ -85,7 +97,7 @@
     width:100%;
 }
 
-#main-nav a{color: black}
+#main-nav a{color: black;font-family: "Glaser Stencil D Regular"; text-decoration: none;}
 
 body {
   font-family:"Studio Sans Regular";
@@ -95,11 +107,11 @@ body {
 
 header{margin-top:50px;}
 
-h1{
+h1,h3{
     font-family: "Glaser Stencil D Regular", Helvetica, sans-serif;
   }
 
-nav,h2,h3,h4,h5{
+nav,h2,h4,h5{
   font-family: "Studio Sans Bold", Helvetica, sans-serif;
 }
 
