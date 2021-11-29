@@ -60,9 +60,9 @@ a {
 }
 
 .logo {
-    max-height: 60px;
+    max-height: 100px;
     position: fixed;
-    opacity: 0.8;
+    opacity: 0.5;
     top: 5px;
     left: 10;
     transition: 0.01s ease-in-out;
