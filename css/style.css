@@ -109,6 +109,20 @@ header {
 
 section {text-align: center;}
 
+#kor.banner-container img {
+    max-height:50vh;
+    width: none;
+}
+
+.header-banner{
+   height:30vh;
+background-image:url('/media/banners/KOR_Web_banner-07.png');
+background-size:cover;
+background-position:center;
+}
+
+
+
 h1,h3 {
     font-family: "Glaser Stencil D Regular", Helvetica, sans-serif;
 }
