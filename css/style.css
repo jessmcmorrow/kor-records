@@ -115,13 +115,12 @@ section {text-align: center;}
 }
 
 .header-banner{
-   height:30vh;
-background-image:url('/media/banners/KOR_Web_banner-07.png');
-background-size:200px;
-background-position:center;
+   height: 10vh;
+   background-image:url('/media/banners/KOR_Web_banner-07.png');
+   background-size:200px;
+   background-position: center;
+   background-attachment: fixed;
 }
-
-
 
 h1,h3 {
     font-family: "Glaser Stencil D Regular", Helvetica, sans-serif;
