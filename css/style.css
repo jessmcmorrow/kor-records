@@ -1,13 +1,9 @@
 @font-face {
-  font-family: "CircularStdBold";
-  src: url("/fonts/CircularStd-Bold.otf"); /* IE9 Compat Modes */
-  src: url("/fonts/CircularStd-Bold.otf") format("embedded-opentype"),
-    /* IE6-IE8 */ url("/fonts/CircularStd-Bold.otf") format("woff2"),
-    /* Super Modern Browsers */ url("/fonts/CircularStd-Bold.otf")
-      format("woff"),
-    /* Pretty Modern Browsers */ url("/fonts/CircularStd-Bold.otf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("/fonts/CircularStd-Bold.otf") format("svg"); /* Legacy iOS */
+    font-family: "CircularStdBold";
+    src: url("/fonts/CircularStd-Bold.otf");
+    /* IE9 Compat Modes */
+    src: url("/fonts/CircularStd-Bold.otf") format("embedded-opentype"), /* IE6-IE8 */ url("/fonts/CircularStd-Bold.otf") format("woff2"), /* Super Modern Browsers */ url("/fonts/CircularStd-Bold.otf") format("woff"), /* Pretty Modern Browsers */ url("/fonts/CircularStd-Bold.otf") format("truetype"), /* Safari, Android, iOS */ url("/fonts/CircularStd-Bold.otf") format("svg");
+    /* Legacy iOS */
 }
 
 @font-face {
@@ -15,111 +11,143 @@
     font-style: normal;
     font-weight: normal;
     src: local('Studio Sans Regular'), url('/fonts/StudioSans.woff') format('woff');
-    }
-    
+}
 
-    @font-face {
+@font-face {
     font-family: 'Studio Sans ExtraLight';
     font-style: normal;
     font-weight: normal;
     src: local('Studio Sans ExtraLight'), url('/fonts/StudioSans Extra Light.woff') format('woff');
-    }
-    
+}
 
-    @font-face {
+@font-face {
     font-family: 'Studio Sans Light';
     font-style: normal;
     font-weight: normal;
     src: local('Studio Sans Light'), url('/fonts/StudioSans Light.woff') format('woff');
-    }
-    
+}
 
-    @font-face {
+@font-face {
     font-family: 'Studio Sans Medium';
     font-style: normal;
     font-weight: normal;
     src: local('Studio Sans Medium'), url('/fonts/StudioSans Medium.woff') format('woff');
-    }
-    
+}
 
-    @font-face {
+@font-face {
     font-family: 'Studio Sans Bold';
     font-style: normal;
     font-weight: normal;
     src: local('Studio Sans Bold'), url('/fonts/StudioSans Bold.woff') format('woff');
-    }
-    
+}
 
-    @font-face {
+@font-face {
     font-family: 'Studio Sans ExtraBold';
     font-style: normal;
     font-weight: normal;
     src: local('Studio Sans ExtraBold'), url('/fonts/StudioSans Extra Bold.woff') format('woff');
-    }
-
-    @font-face {
-        font-family: 'Glaser Stencil D Regular';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Studio Sans ExtraBold'), url('/fonts/Glaser Stencil D Regular.ttf') format('ttf');
-        }
-
-    a {color:blue;}
-
-
-.nav-links a { padding:3px;}
-
-.nav-links :hover {
-  background-color: #00ff97;
-  color: black;
 }
 
-#main-nav{
-    position:fixed;
-    top:0;
-    left:0;
-    background:rgba(255,255,255,0.87);
+@font-face {
+    font-family: 'Glaser Stencil D Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Studio Sans ExtraBold'), url('/fonts/Glaser Stencil D Regular.woff') format('woff');
+}
+
+a {
+    color: blue;
+}
+
+.logo {
+    max-height: 100px;
+    position: fixed;
+    opacity: 0.5;
+    top: 5px;
+    left: 10;
+    transition: 0.01s ease-in-out;
+}
+
+.title-text {
+    max-width: 110px;
+}
+
+.nav-links a {
+    padding: 3px;
+}
+
+.nav-links :hover {
+    background-color: #00ff97;
+    color: black;
+}
+
+#main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0);
     place-items: center;
     display: flex;
     justify-content: space-evenly;
-    width:100%;
+    width: 100%;
 }
 
-#main-nav a{color: black}
+#main-nav a {
+    color: black;
+    text-decoration: none;
+}
 
 body {
-  font-family:"Studio Sans Regular";
-  font-size: 18px;
-  background-color: white;
+    font-family: "Studio Sans Regular";
+    font-size: 18px;
+    background-color: white;
 }
 
-header{margin-top:50px;}
+header {
+    margin-top: 50px;
+}
 
-h1{
+section {text-align: center;}
+
+#kor.banner-container img {
+    max-height:50vh;
+    width: none;
+}
+
+.header-banner{
+   height: 10vh;
+   background-image:url('/media/banners/KOR_Web_banner-07.png');
+   background-size:200px;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+h1,h3 {
     font-family: "Glaser Stencil D Regular", Helvetica, sans-serif;
-  }
+}
 
-nav,h2,h3,h4,h5{
-  font-family: "Studio Sans Bold", Helvetica, sans-serif;
+nav,h2,h4,h5 {
+    font-family: "Studio Sans Bold", Helvetica, sans-serif;
 }
 
 .row {
-  display: -webkit-flex;
-  display: flex;
+    display: -webkit-flex;
+    display: flex;
 }
 
 .column {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 10px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
 }
 
 footer {
-  padding: 10px;
-  text-align: center;
+    padding: 10px;
+    text-align: center;
 }
+
 .banner-container img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
