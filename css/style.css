@@ -52,7 +52,7 @@
     font-family: 'Glaser Stencil D Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Studio Sans ExtraBold'), url('/fonts/Glaser Stencil D Regular.woff') format('woff');
+    src: local('Studio Sans ExtraBold'), url('../fonts/Glaser Stencil D Regular.woff') format('woff');
 }
 
 a {
@@ -116,7 +116,7 @@ section {text-align: center;}
 
 .header-banner{
    height: 10vh;
-   background-image:url('/media/banners/KOR_Web_banner-07.png');
+   background-image:url('../media/banners/KOR_Web_banner-07.png');
    background-size:200px;
    background-position: center;
    background-attachment: fixed;
