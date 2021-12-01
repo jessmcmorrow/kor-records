@@ -1,8 +1,8 @@
 @font-face {
     font-family: "CircularStdBold";
-    src: url("/fonts/CircularStd-Bold.otf");
+    src: url("../fonts/CircularStd-Bold.otf");
     /* IE9 Compat Modes */
-    src: url("/fonts/CircularStd-Bold.otf") format("embedded-opentype"), /* IE6-IE8 */ url("/fonts/CircularStd-Bold.otf") format("woff2"), /* Super Modern Browsers */ url("/fonts/CircularStd-Bold.otf") format("woff"), /* Pretty Modern Browsers */ url("/fonts/CircularStd-Bold.otf") format("truetype"), /* Safari, Android, iOS */ url("/fonts/CircularStd-Bold.otf") format("svg");
+    src: url("../fonts/CircularStd-Bold.otf") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/CircularStd-Bold.otf") format("woff2"), /* Super Modern Browsers */ url("../fonts/CircularStd-Bold.otf") format("woff"), /* Pretty Modern Browsers */ url("../fonts/CircularStd-Bold.otf") format("truetype"), /* Safari, Android, iOS */ url("../fonts/CircularStd-Bold.otf") format("svg");
     /* Legacy iOS */
 }
 
@@ -10,42 +10,42 @@
     font-family: 'Studio Sans Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Studio Sans Regular'), url('/fonts/StudioSans.woff') format('woff');
+    src: local('Studio Sans Regular'), url('../fonts/StudioSans.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Studio Sans ExtraLight';
     font-style: normal;
     font-weight: normal;
-    src: local('Studio Sans ExtraLight'), url('/fonts/StudioSans Extra Light.woff') format('woff');
+    src: local('Studio Sans ExtraLight'), url('../fonts/StudioSans Extra Light.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Studio Sans Light';
     font-style: normal;
     font-weight: normal;
-    src: local('Studio Sans Light'), url('/fonts/StudioSans Light.woff') format('woff');
+    src: local('Studio Sans Light'), url('../fonts/StudioSans Light.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Studio Sans Medium';
     font-style: normal;
     font-weight: normal;
-    src: local('Studio Sans Medium'), url('/fonts/StudioSans Medium.woff') format('woff');
+    src: local('Studio Sans Medium'), url('../fonts/StudioSans Medium.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Studio Sans Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Studio Sans Bold'), url('/fonts/StudioSans Bold.woff') format('woff');
+    src: local('Studio Sans Bold'), url('../fonts/StudioSans Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Studio Sans ExtraBold';
     font-style: normal;
     font-weight: normal;
-    src: local('Studio Sans ExtraBold'), url('/fonts/StudioSans Extra Bold.woff') format('woff');
+    src: local('Studio Sans ExtraBold'), url('../fonts/StudioSans Extra Bold.woff') format('woff');
 }
 
 @font-face {
