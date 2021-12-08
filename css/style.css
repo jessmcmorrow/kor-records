@@ -70,6 +70,7 @@ a {
 
 .title-text {
     max-width: 110px;
+    filter: invert(1);
 }
 
 .nav-links a {
@@ -100,7 +101,8 @@ a {
 body {
     font-family: "Studio Sans Regular";
     font-size: 18px;
-    background-color: white;
+    background-color: #000000f0;
+    color:white;
 }
 
 header {
