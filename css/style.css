@@ -69,8 +69,10 @@ a {
 }
 
 .title-text {
-    max-width: 110px;
+    width: 240px;
+    max-width: 80%;
     filter: invert(1);
+    margin-top: 6vh;
 }
 
 .nav-links a {
@@ -102,26 +104,28 @@ body {
     font-family: "Studio Sans Regular";
     font-size: 18px;
     background-color: #000000f0;
-    color:white;
+    color: white;
 }
 
 header {
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
-section {text-align: center;}
+section {
+    text-align: center;
+}
 
 #kor.banner-container img {
-    max-height:50vh;
+    max-height: 50vh;
     width: none;
 }
 
-.header-banner{
-   height: 10vh;
-   background-image:url('../media/banners/KOR_Web_banner-07.png');
-   background-size:200px;
-   background-position: center;
-   background-attachment: fixed;
+.header-banner {
+    height: 20vh;
+    background-image: url('../media/banners/KOR_Web_banner-07.png');
+    background-size: 200px;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 h1,h3 {
@@ -153,6 +157,7 @@ footer {
     width: 100%;
     height: auto;
 }
+
 .slider .banner-container {
     display: none;
     animation: reveal .5s ease-in-out;
@@ -160,7 +165,7 @@ footer {
 
 .slider .banner-container.active {
     display: block;
-    }
+}
 
 .slider .dots {
     text-align: center;
