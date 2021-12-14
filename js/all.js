@@ -53,22 +53,28 @@ function logoRotate(){
     
     function autoSlide(){
 
-        var secondsPerSlide = 2;
+        var secondsPerSlide = 4;
+        var framesPerSlide = secondsPerSlide*60;
         var c = 0;
         var paused = false;
 
 var slideLoader = document.getElementById('slide-loader');
 
-        setInterval(function () {
-            c++;
-            if(c % (secondsPerSlide*1000) == 0 && !paused){
-                goToNextSlide();
-        }
-        if(!paused){
-            slideLoader.style.width = ((c % (secondsPerSlide*1000)) / (secondsPerSlide*1000))*100 + "%";
-        }
+function animation() {
+    c++;
+    if(c % (framesPerSlide) == 0 && !paused){
+        goToNextSlide();
+}
+if(!paused){
+    slideLoader.style.width = ((c % (framesPerSlide)) / (framesPerSlide))*100 + "%";
+}
+window.requestAnimationFrame(animation);
 
-        },1)
+}
+
+window.requestAnimationFrame(animation);
+
+
 
         // slider.onmousein = function(){
         //     paused = true;
