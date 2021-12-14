@@ -8,7 +8,7 @@ function logoRotate(){
     function slider(){
 
     var slider = document.getElementById('slider')
-    var sliderItems = [].slice.call(slider.getElementsByTagName('div'));
+    var sliderItems = [].slice.call(slider.getElementsByClassName('banner-container'));
     var dotsContainer = document.getElementById('dots');
     
     
