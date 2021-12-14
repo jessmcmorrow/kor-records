@@ -74,14 +74,12 @@ function slider() {
         window.requestAnimationFrame(animation);
 
         sliderItems.forEach(function(item) {
-            item.onclick = function() {
+            item.onclick = function(e) {
                 paused = !paused;
+                return false;
             }
         });
 
-        dots.onclick = function(){
-            paused = true;
-        }
     }
 
     autoSlide();
