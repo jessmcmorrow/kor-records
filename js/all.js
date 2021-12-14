@@ -11,6 +11,7 @@ function slider() {
     var slider = document.getElementById('slider')
     var sliderItems = [].slice.call(slider.getElementsByClassName('banner-container'));
     var dotsContainer = document.getElementById('dots');
+    var paused = false;
 
     sliderItems.forEach(function(item, i) {
         var dot = document.createElement('li');
@@ -27,7 +28,7 @@ function slider() {
     var dots = [].slice.call(dotsContainer.getElementsByTagName('li'));
 
     function runSlider() {
-        var dnum = this.getAttribute("id");
+        var dnum = this.id;
         sliderItems.forEach(function(item, i) {
             item.classList.remove('active');
             dots[i].classList.remove('active');
@@ -54,7 +55,7 @@ function slider() {
         var secondsPerSlide = 4;
         var framesPerSlide = secondsPerSlide * 60;
         var c = 0;
-        var paused = false;
+
 
         var slideLoader = document.getElementById('slide-loader');
 
@@ -78,6 +79,9 @@ function slider() {
             }
         });
 
+        dots.onclick = function(){
+            paused = true;
+        }
     }
 
     autoSlide();
