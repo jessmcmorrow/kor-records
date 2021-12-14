@@ -75,17 +75,17 @@ var slideLoader = document.getElementById('slide-loader');
 
         },1)
 
-        slider.onmousein = function(){
-            paused = true;
-        }
+        // slider.onmousein = function(){
+        //     paused = true;
+        // }
 
-        slider.onmouseout = function(){
-            paused = false;
-        }
+        // slider.onmouseout = function(){
+        //     paused = false;
+        // }
 
-        slider.onclick = function(){
-            paused = !paused;
-        }
+        // slider.onclick = function(){
+        //     paused = !paused;
+        // }
 
     }
 
