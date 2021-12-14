@@ -61,14 +61,12 @@ var slideLoader = document.getElementById('slide-loader');
 
         setInterval(function () {
             c++;
-            console.log(c % secondsPerSlide*1000);
             if(c % (secondsPerSlide*1000) == 0 && !paused){
                 goToNextSlide();
         }
         if(!paused){
             slideLoader.style.width = ((c % (secondsPerSlide*1000)) / (secondsPerSlide*1000))*100 + "%";
         }
-            console.log(slideLoader.style.width);
 
         },1)
 
