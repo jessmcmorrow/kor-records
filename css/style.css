@@ -191,6 +191,11 @@ footer {
     opacity: 1;
 }
 
+#slide-loader{
+    height:10px;
+    background-color:#00ff97;
+}
+
 @keyframes reveal {
     from {
         opacity: 0;

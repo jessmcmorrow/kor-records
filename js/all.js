@@ -1,25 +1,102 @@
-window.onscroll = function(){
-    var rotate = Math.round(360 * (window.scrollY / (document.body.scrollHeight - window.innerHeight)));
-    document.getElementById('logo').style.transform = "rotate("+rotate+"deg)";;
-}
-var slider = document.getElementById('slider')
-var sliderItem = slider.getElementsByTagName('div');
-var dots = document.getElementById('dots');
-var dotsChild = document.getElementById('dots').getElementsByTagName('li');
-for (i = 0; i < sliderItem.length; i++) {
-    dots.appendChild(document.createElement('li'));
-    dotsChild[i].classList.add('list-inline-item');
-    dotsChild[i].setAttribute("id", i);
-    dotsChild[i].innerHTML = i;
-    dotsChild[0].classList.add('active');
-    dotsChild[i].addEventListener("click", runSlider);
-}
-function runSlider() {
-    var dnum = this.getAttribute("id");
-    for (i = 0; i < sliderItem.length; i++) {
-        sliderItem[i].classList.remove('active');
-        sliderItem[dnum].classList.add('active');
-        dotsChild[i].classList.remove('active');
-        dotsChild[dnum].classList.add('active');
+function logoRotate(){
+    window.onscroll = function(){
+        var rotate = Math.round(360 * (window.scrollY / (document.body.scrollHeight - window.innerHeight)));
+        document.getElementById('logo').style.transform = "rotate("+rotate+"deg)";;
     }
 }
+    
+    function slider(){
+
+    var slider = document.getElementById('slider')
+    var sliderItems = [].slice.call(slider.getElementsByTagName('div'));
+    var dotsContainer = document.getElementById('dots');
+    
+    
+    sliderItems.forEach(function(item,i){
+        var dot = document.createElement('li');
+        dotsContainer.appendChild(dot);
+        dot.classList.add('list-inline-item');
+        dot.setAttribute("id", i);
+        dot.innerHTML = i;
+        dot.addEventListener("click", runSlider);
+        if(i==0){
+            dot.classList.add('active')
+        }
+    })
+
+    var dots = [].slice.call(dotsContainer.getElementsByTagName('li'));
+
+    
+    function runSlider() {
+        var dnum = this.getAttribute("id");
+        
+    sliderItems.forEach(function(item,i){
+            item.classList.remove('active');
+            dots[i].classList.remove('active');
+
+            sliderItems[dnum].classList.add('active');
+            dots[dnum].classList.add('active');
+    });
+        
+    }
+
+    function goToNextSlide(){
+        var lastSlideId = (dots.length - 1).toString();
+                
+        var currentSlideId = dots.filter(x=>x.className.indexOf('active')!=-1)[0].id;
+        
+        var nextSlideId = currentSlideId !== lastSlideId ? (parseInt(currentSlideId)+1).toString() : "0";
+    
+        document.getElementById(nextSlideId).click();
+    }
+    
+    
+    function autoSlide(){
+
+        var secondsPerSlide = 2;
+        var c = 0;
+        var paused = false;
+
+
+// or it could be one kinda loader bar that goes across the whole width of top and/or bottom of the slide... instead of a tiny one on each changer button
+
+var slideLoader = document.getElementById('slide-loader');
+
+        setInterval(function () {
+            c++;
+            console.log(c % secondsPerSlide*1000);
+            if(c % (secondsPerSlide*1000) == 0 && !paused){
+                goToNextSlide();
+        }
+        if(!paused){
+            slideLoader.style.width = ((c % (secondsPerSlide*1000)) / (secondsPerSlide*1000))*100 + "%";
+        }
+            console.log(slideLoader.style.width);
+
+        },1)
+
+        slider.onmousein = function(){
+            paused = true;
+        }
+
+        slider.onmouseout = function(){
+            paused = false;
+        }
+
+        slider.onclick = function(){
+            paused = !paused;
+        }
+
+    }
+
+    autoSlide();
+
+    }
+    
+    
+
+logoRotate();
+slider();
+
+
+// i think maybe you need to open the index.html so i can see it...
