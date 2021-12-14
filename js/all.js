@@ -57,9 +57,6 @@ function logoRotate(){
         var c = 0;
         var paused = false;
 
-
-// or it could be one kinda loader bar that goes across the whole width of top and/or bottom of the slide... instead of a tiny one on each changer button
-
 var slideLoader = document.getElementById('slide-loader');
 
         setInterval(function () {
@@ -97,6 +94,3 @@ var slideLoader = document.getElementById('slide-loader');
 
 logoRotate();
 slider();
-
-
-// i think maybe you need to open the index.html so i can see it...
