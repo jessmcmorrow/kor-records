@@ -1,8 +1,9 @@
 function logoRotate() {
     window.onscroll = function() {
-        var rotate = Math.round(360 * (window.scrollY / (document.body.scrollHeight - window.innerHeight)));
+        var rotate = Math.round(360 * (window.scrollY / (document.body.scrollHeight - window.innerHeight))) *2;
         document.getElementById('logo').style.transform = "rotate(" + rotate + "deg)";
-        ;
+    // make it move down the page alongside the scroller
+    //    document.getElementById('logo').style.top = (window.innerHeight-document.getElementById('logo').height) * (window.scrollY / (document.body.scrollHeight - window.innerHeight)) +"px";         
     }
 }
 
@@ -52,7 +53,7 @@ function slider() {
 
     function autoSlide() {
 
-        var secondsPerSlide = 4;
+        var secondsPerSlide = 7;
         var framesPerSlide = secondsPerSlide * 60;
         var c = 0;
 

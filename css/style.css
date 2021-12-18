@@ -132,6 +132,7 @@ section {
     background-size: 200px;
     background-position: center;
     background-attachment: fixed;
+    filter: invert(1);
 }
 
 h1,h3 {
